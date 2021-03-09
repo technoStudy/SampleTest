@@ -1,4 +1,7 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Random;
 
 public class SimpleTest {
     @Test
@@ -11,7 +14,12 @@ public class SimpleTest {
     }
     @Test
     public void test3() {
-        System.out.println("Success");
+        boolean failOrNotFail = new Random().nextBoolean();
+        if(failOrNotFail) {
+            Assert.fail("Fail 3");
+        } else {
+            System.out.println("Success 3");
+        }
     }
 
     @Test
