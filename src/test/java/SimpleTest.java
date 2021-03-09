@@ -14,4 +14,9 @@ public class SimpleTest {
         System.out.println("Success");
     }
 
+    @Test
+    public void test4() {
+        System.out.println("Success4");
+    }
+
 }
