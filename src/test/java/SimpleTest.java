@@ -19,4 +19,9 @@ public class SimpleTest {
         System.out.println("Success4");
     }
 
+    @Test
+    public void test5() {
+        System.out.println("Success5");
+    }
+
 }
