@@ -24,7 +24,7 @@ public class SimpleTest {
 
     @Test
     public void test4() {
-        System.out.println("Success4");
+        Assert.fail("Fail 4");
     }
 
     @Test
