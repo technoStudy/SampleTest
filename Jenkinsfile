@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'ADOPT_JDK15'
+        jdk 'ADOPT_JDK8'
         maven 'mvn363'
     }
     stages {
