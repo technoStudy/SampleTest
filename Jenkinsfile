@@ -3,11 +3,13 @@ pipeline {
 
     tools {
         jdk 'ADOPT_JDK11'
+        maven 'mvn363'
     }
     stages {
         stage("Print java version") {
             steps {
                 bat "java -version"
+                bat "mvn --version"
             }
         }
         stage('Test') {
