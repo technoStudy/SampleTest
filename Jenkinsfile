@@ -23,6 +23,8 @@ pipeline {
             post {
                 always {
                     step([$class: 'Publisher', reportFilenamePattern:'**/testng-results.xml'])
+                    step([$class: 'NotifyEventsBuilder', token: 'F_D98OrdEhLnHLEQBZhrsgwzqSYRBmJl',
+                    message:'HELLO'])
                 }
             }
 
