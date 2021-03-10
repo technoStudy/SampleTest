@@ -1,7 +1,15 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'ADOPT_JDK11'
+    }
     stages {
+        stage("Print java version") {
+            steps {
+                bat "java -version"
+            }
+        }
         stage('Test') {
             steps {
                 // Run Maven on a Unix agent.
