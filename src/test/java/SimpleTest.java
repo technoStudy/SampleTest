@@ -14,7 +14,7 @@ public class SimpleTest {
     }
     @Test
     public void test3() {
-        boolean failOrNotFail = false;
+        boolean failOrNotFail = new Random().nextBoolean();
         if(failOrNotFail) {
             Assert.fail("Fail 3");
         } else {
@@ -24,7 +24,7 @@ public class SimpleTest {
 
     @Test
     public void test4() {
-
+        Assert.fail("Fail 4");
     }
 
     @Test
